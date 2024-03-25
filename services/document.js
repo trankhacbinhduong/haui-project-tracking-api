@@ -6,6 +6,13 @@ const getDocuments = (schoolYear) => {
   });
 };
 
+const createDocument = (data) => {
+  return prisma.document.create({
+    data,
+  });
+};
+
 module.exports = {
   getDocuments,
+  createDocument,
 };
