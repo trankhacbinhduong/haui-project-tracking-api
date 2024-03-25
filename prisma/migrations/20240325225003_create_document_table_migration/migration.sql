@@ -4,7 +4,7 @@ CREATE TABLE `document` (
     `name` VARCHAR(255) NOT NULL,
     `description` VARCHAR(255) NULL,
     `path` VARCHAR(255) NOT NULL,
-    `school_year` CHAR(4) NOT NULL,
+    `school_year` YEAR NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

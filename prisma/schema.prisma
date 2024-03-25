@@ -41,7 +41,7 @@ model Document {
   name        String  @db.VarChar(255)
   description String? @db.VarChar(255)
   path        String  @db.VarChar(255)
-  schoolYear  String  @map("school_year") @db.Char(4)
+  schoolYear  Int     @map("school_year") @db.Year
 
   @@map("document")
 }
